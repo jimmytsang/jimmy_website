@@ -199,6 +199,17 @@ function portfolioPopup() {
             });
         });
     }
+    if (('.services').length > 0) {
+        $('.services').each(function() {
+            $(this).magnificPopup({
+                delegate: '.js-zoom-gallery',
+                type: 'image',
+                gallery: {
+                    enabled:true
+                }
+            });
+        });
+    }
 }
 /*-------------------------
         ISOTOPE JS
